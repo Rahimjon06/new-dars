@@ -4,6 +4,7 @@ body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     color: white;
+    text-align: center;
   }
   
   canvas {
@@ -18,30 +19,32 @@ body {
     color: white;
   }
 
-  .container h1 {
+  .center-info {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 50px;
     z-index: 1;
-    background: linear-gradient(90deg,#dad2b0,#ff006a 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: rotate 7s alternate infinite;
+    text-align: center;
   }
 
-  @keyframes rotate {
-    0% {
-      filter: hue-rotate(279deg);
-    }
-    50% {
-      filter: hue-rotate(197deg);
-    }
-    100% {
-      filter: hue-rotate(12deg);
-    }
+  .center-info i {
+    font-size: 27px;
+    transition: all 0.35s;
   }
+
+  .center-info i:hover {
+    cursor: pointer;
+    transform: translate(0, 35%);
+  }
+  .container h1 {
+    font-size: 50px;
+    background: linear-gradient(90deg,#2b98d8,#ffffff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  
   
   /* ---- particles.js container ---- */
   
@@ -49,7 +52,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #03071e;
+    background-color: #02030c;
     background-image: url("");
     background-repeat: no-repeat;
     background-size: cover;
@@ -125,4 +128,51 @@ li a:hover {
 
 span {
     color: rgb(218, 71, 71);
+}
+
+
+.slide {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 30px;
+}
+
+
+.fp-watermark {
+  display: none;
+}
+
+#slide2 {
+  background-image: url('images/todo.png');
+}
+#slide3 {
+  background-image: url('images/tip-calculator.png');
+}
+#slide4 {
+  background-image: url('images/register.png');
+}
+#slide5 {
+  background-image: url('images/snap.png');
+}
+#slide6 {
+  background-image: url('images/ondeck.png');
+}
+#slide7 {
+  background-image: url('images/new-world.png');
+}
+#slide8 {
+  background-image: url('images/insta.png');
+}
+#slide9 {
+  background-image: url('images/huddle.png');
+}
+#slide10 {
+  background-image: url('images/faq.png');
+}
+#slide11 {
+  background-image: url('images/color-game.png');
+}
+#slide12 {
+  background-image: url('images/car.png');
 }

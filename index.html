@@ -10,14 +10,48 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&family=Tsukimi+Rounded:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/fullpage.min.css" integrity="sha512-Go0fX6Al6Eab+N7QbSFHYBpwdcU2rbfONUcbRIS4z+9yzLlj7Xj8ao2BAOPE9Qtxdl+7iq04xzzcF4OTOWoUWg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="node_modules/particles.js/particles.js"></script>
 </head>
 <body>
-    <div class="container">
-        <h1>ABDUGAFOR</h1>
-        <div id="particles-js"></div>
-    </div>
+    
 
+    <div id="fullpage">
+        <div class="section active" >
+            <div class="container">
+                <div class="center-info">
+                    <h1>ABDUGAFOR</h1>
+                    <i class="fa-solid fa-chevron-down" id="btn"></i>
+                </div>
+                <div id="particles-js"></div>
+            </div>
+        </div>
+
+        <div class="section" >
+           <div class="about-container">
+            <h1>About</h1>
+           </div>
+        </div>
+
+        <div class="section" id="sect">
+            <div class="slide" id="slide1">My Projects</div>
+            <div class="slide" id="slide2">TODO APP</div>
+            <div class="slide" id="slide3"></div>
+            <div class="slide" id="slide4"></div>
+            <div class="slide" id="slide5"></div>
+            <div class="slide" id="slide6"></div>
+            <div class="slide" id="slide7"></div>
+            <div class="slide" id="slide8"></div>
+            <div class="slide" id="slide9"></div>
+            <div class="slide" id="slide10"></div>
+            <div class="slide" id="slide11"></div>
+            <div class="slide" id="slide12"></div>
+        </div>
+
+        <div class="section">Some section</div>
+        <div class="section" id="hide">Some section</div>
+    </div>
     <!-- <header>
             <a href="#" class="logo"> <span>&lsaquo;</span>Abdugafor<span>&frasl;</span><span>&rsaquo;</span></a>
 
@@ -30,6 +64,7 @@
             </nav>
         
     </header> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/fullpage.min.js" integrity="sha512-JSVRnP8UFs0ieN/cvP9v4vmW1CotIaEKKN7W+4JaKNrllZolTv2aJfVGn4BFdfZ1jRZxgTAAaXWdlZbEm9iwFA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="app.js"></script>
 </body>
 </html>
