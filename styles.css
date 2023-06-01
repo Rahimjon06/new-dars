@@ -468,4 +468,13 @@ span {
   .technologies img {
     width: 130px;
   }
+
+  .slide-content img {
+    /* width: 150px; */
+    margin: 0 40px;
+  }
+
+  .slide-left-content h2 {
+    margin-left: 40px;
+  }
 }
