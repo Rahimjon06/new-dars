@@ -434,10 +434,7 @@ span {
     grid-column-start: 2;
   }
 
-  .item5 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-  }
+  
 
   .card, .sc-shape {
     width: 70px;
@@ -446,6 +443,20 @@ span {
 
   .card img {
     width: 30px;
+  }
+
+  .slide-content img {
+    width: 321px;
+  }
+  .slide-content {
+    flex-direction: column;
+  }
+  .slide-right-content {
+    margin: 0 50px;
+  }
+
+  .slide-content h2 {
+    font-size: 25px;
   }
 }
 
