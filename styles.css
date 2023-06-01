@@ -456,7 +456,18 @@ span {
   }
 
   .slide-content h2 {
-    font-size: 25px;
+    font-size: 22px;
+  }
+
+  .slide-right-content h4 {
+    font-size: 21px;
+  }
+  .slide-right-content p {
+    font-size: 10px;
+  }
+  
+  .slide-right-content ul {
+    margin-top: 10px;
   }
 }
 
