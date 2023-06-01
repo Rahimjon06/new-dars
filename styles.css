@@ -178,6 +178,10 @@ ul {
   position: relative;
 }
 
+.section, .slide {
+  background: #02030c;
+}
+
 .biography img {
   position: absolute;
   width: 300px;
