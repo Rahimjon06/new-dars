@@ -391,6 +391,7 @@ span {
 .github {
   background: rgb(59, 59, 59);
 }
+
 @media all and (max-width: 900px) {
   .fp-arrow {
     margin-top: -18px !important;
@@ -489,3 +490,4 @@ span {
     margin-left: 40px;
   }
 }
+
