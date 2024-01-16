@@ -178,6 +178,34 @@ ul {
   position: relative;
 }
 
+
+.anim {
+  animation: 10s infinite linear rotateRight;
+}
+
+@keyframes rotateRight {
+  0% {}
+  100% {transform: rotate(360deg);}
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  75% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .section, .slide {
   background: #02030c;
 }
@@ -186,17 +214,17 @@ ul {
   position: absolute;
   width: 300px;
   height: 300px;
+  top: 0;
   left: 10px;
   object-fit: cover;
   border-radius: 24% 76% 67% 33% / 30% 30% 70% 70% ;
-  box-shadow:
-  2.8px 2.8px 2.2px rgba(255, 255, 255, 0.02),
-  6.7px 6.7px 5.3px rgba(255, 255, 255, 0.028),
-  12.5px 12.5px 10px rgba(255, 255, 255, 0.035),
-  22.3px 22.3px 17.9px rgba(253, 253, 253, 0.042),
-  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
-  100px 100px 80px rgba(0, 0, 0, 0.07);
+
+  animation: 5s infinite linear updown;
+  -webkit-box-shadow: 6px -7px 175px 0px rgba(87,87,194,0.81);
+  -moz-box-shadow: 6px -7px 175px 0px rgba(87,87,194,0.81);
+  box-shadow: 6px -7px 175px 0px rgba(87,87,194,0.81);
 }
+
 
 
 .shape {
@@ -205,6 +233,8 @@ ul {
   border-radius: 64% 36% 38% 62% / 39% 50% 50% 61%   ;
   background: rgb(255, 255, 255);
 }
+
+
 .text-info {
   text-align: left;
   margin: 50px 20px;
@@ -230,6 +260,7 @@ span {
   filter: grayscale(100%);
   transition: all 0.35s;
   cursor: pointer;
+  background-blend-mode: luminosity; 
 }
 
 .technologies img:hover {
@@ -390,6 +421,10 @@ span {
 
 .github {
   background: rgb(59, 59, 59);
+}
+
+.slide-left-content img {
+  box-shadow: 6px -7px 175px 0px rgba(87, 87, 194, 0.81);
 }
 
 @media all and (max-width: 900px) {
